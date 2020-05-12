@@ -7,9 +7,6 @@
 // ***********************************************************************
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using BO;
 using Excepcoes;
 
@@ -19,7 +16,7 @@ namespace DL
     {
         #region ESTADO
 
-        const int maxCamas = 100;
+        const int maxCamas = 200;
         readonly List<Reserva> reservas;
         const int MAXRESERVAS = maxCamas;
 

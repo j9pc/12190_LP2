@@ -20,13 +20,13 @@ namespace BO
         /// </summary>
         /// <returns><c>true</c>, se o numero de CC foi validado, <c>false</c> se não.</returns>
         /// <param name="registo">numero.</param>
-        public static bool NumeroCC(string numeroCC)
+        public static bool NumeroCC(int numeroCC)
         {
 
-            if (numeroCC != null)
+            if (numeroCC != -1)
             {
                 var valida = new Regex(@"^[0-9]{8}$");
-                if (valida.IsMatch(numeroCC))
+                if (valida.IsMatch(numeroCC.ToString()))
                 {
                     return true;
                 }
