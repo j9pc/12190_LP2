@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{685A59B1-54BB-45B2-AA48-9B560502DDD3}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>BL</RootNamespace>
     <AssemblyName>BL</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -32,8 +32,28 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GestorSalas.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BO\BO.csproj">
+      <Project>{ebbf832b-d90d-4a3c-ac55-68fa1c525342}</Project>
+      <Name>BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DL\DL.csproj">
+      <Project>{92b44280-612c-46b7-ba65-1a45e71ceaec}</Project>
+      <Name>DL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Excepcoes\Excepcoes.csproj">
+      <Project>{c22f933c-cd4c-4565-b834-f54fb7f7fc38}</Project>
+      <Name>Excepcoes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

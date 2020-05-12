@@ -1,0 +1,2 @@
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Main-TP-12190\obj\Debug\Main-TP-12190.csproj.CoreCompileInputs.cache
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Main-TP-12190\obj\Debug\Main-TP-12190.csprojAssemblyReference.cache

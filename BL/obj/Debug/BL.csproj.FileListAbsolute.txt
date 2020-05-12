@@ -1,0 +1,17 @@
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\bin\Debug\BL.dll.config
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\bin\Debug\BL.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\bin\Debug\BL.pdb
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\bin\Debug\BO.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\bin\Debug\DL.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\bin\Debug\Excepcoes.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\bin\Debug\BO.pdb
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\bin\Debug\BO.dll.config
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\bin\Debug\DL.pdb
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\bin\Debug\DL.dll.config
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\bin\Debug\Excepcoes.pdb
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\bin\Debug\Excepcoes.dll.config
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\obj\Debug\BL.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BL\obj\Debug\BL.pdb

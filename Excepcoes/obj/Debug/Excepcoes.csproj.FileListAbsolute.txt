@@ -1,0 +1,7 @@
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Excepcoes\obj\Debug\Excepcoes.csproj.CoreCompileInputs.cache
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Excepcoes\obj\Debug\Excepcoes.csprojAssemblyReference.cache
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Excepcoes\bin\Debug\Excepcoes.dll.config
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Excepcoes\bin\Debug\Excepcoes.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Excepcoes\bin\Debug\Excepcoes.pdb
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Excepcoes\obj\Debug\Excepcoes.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Excepcoes\obj\Debug\Excepcoes.pdb

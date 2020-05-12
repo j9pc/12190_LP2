@@ -8,33 +8,35 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace BO
 {
     public static class Valida
     {
-        //      /// <summary>
-        ///// Método interno para a validação dos números do CC.
-        ///// </summary>
-        ///// <returns><c>true</c>, se o numero de CC foi validado, <c>false</c> se não.</returns>
-        ///// <param name="registo">numero.</param>
-        //public static bool NumeroCC(string numero)
-        //      {
-        //          if (numero != -1)
-        //          {
-        //              var valida = new Regex(@"^[0-9]{8}$");
-        //              if (valida.IsMatch(numero))
-        //              {
-        //                  return true;
-        //              }
-        //              else
-        //              {
-        //                  // caso contrário a excepção é lançada
-        //                  throw new Exception();
-        //              }
-        //          }
-        //          return false;
-        //      }
+        /// <summary>
+        /// Método interno para a validação dos números do CC.
+        /// </summary>
+        /// <returns><c>true</c>, se o numero de CC foi validado, <c>false</c> se não.</returns>
+        /// <param name="registo">numero.</param>
+        public static bool NumeroCC(string numeroCC)
+        {
+
+            if (numeroCC != null)
+            {
+                var valida = new Regex(@"^[0-9]{8}$");
+                if (valida.IsMatch(numeroCC))
+                {
+                    return true;
+                }
+                else
+                {
+                    // caso contrário a excepção é lançada
+                    throw new Exception();
+                }
+            }
+            return false;
+        }
     }
 }

@@ -1,0 +1,7 @@
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BO\obj\Debug\BO.csproj.CoreCompileInputs.cache
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BO\obj\Debug\BO.csprojAssemblyReference.cache
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BO\bin\Debug\BO.dll.config
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BO\bin\Debug\BO.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BO\bin\Debug\BO.pdb
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BO\obj\Debug\BO.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\BO\obj\Debug\BO.pdb
