@@ -8,6 +8,8 @@ using BL;
 using BO;
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace Main_TP_12190
 {
@@ -15,6 +17,7 @@ namespace Main_TP_12190
     {
         static void Main(string[] args)
         {
+
 
             #region MENU
 
@@ -30,31 +33,40 @@ namespace Main_TP_12190
             Pessoa pessoa;
             Reserva reserva;
 
+            string filePath = @"C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\dados.txt";
+            List<string> linhas = File.ReadAllLines(filePath).ToList();
+
+            foreach (var linha in linhas)
+            {
+                string[] info = linha.Split(',');
+                Pessoa novaPessoa = new Pessoa();
+                novaPessoa.Nome = info[0];
+                novaPessoa.Idade = Int32.Parse(info[1]);
+                novaPessoa.NumeroCC = Int32.Parse(info[2]);
+                if (info[3] == "Sala1")
+                {
+                    EnumSalas.Sala1.ToString();
+                }
+                else
+                {
+                    EnumSalas.Sala2.ToString();
+                }
+            }
+
             do
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("[+] ");
                 Console.ResetColor();
                 Console.Write("Camas Disponiveis\\Total");
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("\t\t\t[+] ");
                 Console.ResetColor();
-                Console.WriteLine("Numero de Reservas\\Total");
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("[1] ");
+                Console.Write("\n\n[1] ");
                 Console.ResetColor();
-                Console.Write("{0} - {1}\\{2}", EnumSalas.Sala1.ToString(), GestorSalas.CamasDisponiveis(EnumSalas.Sala1), GestorSalas.TotalCamas(EnumSalas.Sala1));
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("\t\t\t\t[1] ");
-                Console.ResetColor();
-                Console.Write("{0} - {1}\\{2}\n", EnumSalas.Sala1.ToString(), GestorSalas.NumeroReservas(EnumSalas.Sala1), GestorSalas.MaxReservas(EnumSalas.Sala1));
+                Console.Write("{0} - {1}\\{2}\n", EnumSalas.Sala1.ToString(), GestorSalas.CamasDisponiveis(EnumSalas.Sala1), GestorSalas.TotalCamas(EnumSalas.Sala1));
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("[2] ");
                 Console.ResetColor();
-                Console.Write("{0} - {1}\\{2}", EnumSalas.Sala2.ToString(), GestorSalas.CamasDisponiveis(EnumSalas.Sala2), GestorSalas.TotalCamas(EnumSalas.Sala2));
-                Console.Write("\t\t\t[2] ");
-                Console.ResetColor();
-                Console.WriteLine("{0} - {1}\\{2}", EnumSalas.Sala2.ToString(), GestorSalas.NumeroReservas(EnumSalas.Sala2), GestorSalas.MaxReservas(EnumSalas.Sala2));
+                Console.Write("{0} - {1}\\{2}\n", EnumSalas.Sala2.ToString(), GestorSalas.CamasDisponiveis(EnumSalas.Sala2), GestorSalas.TotalCamas(EnumSalas.Sala2));
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.ResetColor();
                 Console.Write("\n[0]  Sair da Aplicação\n");
@@ -86,6 +98,7 @@ namespace Main_TP_12190
                         if (colocar)
                         {
                             Console.WriteLine("\nA pessoa foi colocada com sucesso");
+
                         }
                         Console.WriteLine("Prima qualquer tecla para voltar ao menu.");
                         Console.ReadKey();
@@ -232,6 +245,8 @@ namespace Main_TP_12190
                         break;
 
                     case 7:
+
+
                         Console.Write("\n");
                         MostrarColocadas(GestorSalas.PessoasColocadas(GetSala()));
                         Console.Write("\nPrima Qualquer Tecla para Voltar ao Menu >>> ");
@@ -304,7 +319,7 @@ namespace Main_TP_12190
 
                 do
                 {
-                    Console.Write("Insira a matricula do barco do barco\n\tFormato: 00-00-00\n\t>>>");
+                    Console.Write("Insira o número de CC da Pessoa\n\tFormato: 12345678\n\t>>>");
                     evalNumeroCC = int.TryParse(Console.ReadLine(), out numeroCC);
 
                     try
@@ -314,11 +329,13 @@ namespace Main_TP_12190
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(ex.Message);
+                        Console.WriteLine(ex.Message, "Número de CC colocado incorretamente, insira novamente");
                         evalNumeroCC = false;
                     }
                 } while (!evalNumeroCC);
+
                 return true;
+
             }
             catch (Exception)
             {
@@ -332,11 +349,15 @@ namespace Main_TP_12190
         /// <param name="pessoa">Pessoa.</param>
         static void MostrarPessoa(Pessoa pessoa)
         {
+            Console.Clear();
+            Console.WriteLine("____________________________________________________________\n");
             Console.WriteLine("Nome da Pessoa -> {0}", pessoa.Nome);
             Console.WriteLine("Idade da Pessoa -> {0}", pessoa.Idade);
             Console.WriteLine("Número de CC da pessoa -> {0}", pessoa.NumeroCC);
-            Console.WriteLine("____________________________________________________________");
+            Console.WriteLine("____________________________________________________________\n\n");
+
         }
+
 
         /// <summary>
         /// Método auxiliar para associar as pessoas ás camas.
@@ -356,6 +377,16 @@ namespace Main_TP_12190
             {
                 aux = false;
                 Console.WriteLine(ex.Message);
+            }
+
+            string filePath = @"C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\dados.txt";
+            string texto = String.Concat(pessoa.Nome, ",", pessoa.Idade.ToString(), ",", pessoa.NumeroCC.ToString(), ",", nSalas.ToString());
+
+
+            using (StreamWriter sw = File.AppendText(filePath))
+            {
+                sw.WriteLine(texto);
+
             }
 
             return aux;
@@ -400,7 +431,7 @@ namespace Main_TP_12190
         /// Método auxiliar de criação de uma reserva.
         /// </summary>
         /// <returns><c>true</c>, Reserva ativada, <c>false</c> se não.</returns>
-        /// <param name="barco">Barco.</param>
+        /// <param name="pessoa">Pessoa.</param>
         private static Reserva CriarReserva(Pessoa pessoa)
         {
             var reserva = new Reserva();
@@ -421,8 +452,6 @@ namespace Main_TP_12190
                     aux = false;
                 }
             } while (!aux);
-
-            //reserva.DataSaida = reserva.DataEntrada.AddHours(InputHoras(reserva.DataEntrada));
 
             return reserva;
         }
@@ -488,6 +517,7 @@ namespace Main_TP_12190
 
             for (int i = 0; i < colocadas.Count; i++)
             {
+                Console.Clear();
                 Console.WriteLine("\nAs pessoas colocadas na Sala são as seguintes: \n\n");
                 Console.WriteLine("Número de CC da pessoa -> {0}", colocadas[i].NumeroCC);
                 Console.WriteLine("Nome da pessoa -> {0}", colocadas[i].Nome);

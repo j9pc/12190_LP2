@@ -291,7 +291,7 @@ namespace BL
         /// </summary>
         /// <returns><c>true</c>, se encontrou a pessoa, <c>false</c> se não.</returns>
         /// <param name="numeroCC">numero de CC.</param>
-        /// <param name="docaID">O Id da Doca.</param>
+        /// <param name="idSala">O Id da sala.</param>
         public static List<Reserva> NumerosDeCCReservas(int numeroCC, EnumSalas idSala)
         {
             try

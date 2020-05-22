@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="BO.Cama" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Class Name="BO.Cama">
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAFAAAAAQAAAAAAAAAEAAAAAAAAAAAAAAAECAAABAgA=</HashCode>
       <FileName>Cama.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BO.Pessoa" Collapsed="true">
-    <Position X="2.25" Y="0.5" Width="1.5" />
+  <Class Name="BO.Pessoa">
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQAAEABAABAAAAAAgAAAAAAAAAAAAIAAAEAAAAEAAiA=</HashCode>
       <FileName>Pessoa.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BO.Reserva" Collapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.5" />
+  <Class Name="BO.Reserva">
+    <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAFgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBIAA=</HashCode>
       <FileName>Reserva.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BO.Valida" Collapsed="true">
-    <Position X="2.25" Y="1.5" Width="1.5" />
+  <Class Name="BO.Valida">
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
       <FileName>Valida.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="BO.IPessoa" Collapsed="true">
-    <Position X="0.5" Y="2.75" Width="1.5" />
+  <Interface Name="BO.IPessoa">
+    <Position X="5.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IPessoa.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="BO.EnumSalas" Collapsed="true">
-    <Position X="0.5" Y="3.75" Width="1.5" />
+  <Enum Name="BO.EnumSalas">
+    <Position X="5.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAAAAAAAA=</HashCode>
       <FileName>EnumSalas.cs</FileName>

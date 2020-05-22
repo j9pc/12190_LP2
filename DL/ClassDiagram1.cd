@@ -3,22 +3,29 @@
   <Class Name="DL.Ano">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAJAAAEECABACQAQEAAAAQAA=</HashCode>
       <FileName>Ano.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DL.Dia" Collapsed="true">
+  <Class Name="DL.Dia">
     <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAABAAAAQAAAAAAAAQACAAQAIAAAAAA=</HashCode>
+      <HashCode>AAAAAAAgAAABAAABAAAAQIAAAEECAQACAAQAIAAAAAA=</HashCode>
       <FileName>Dia.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DL.Sala" Collapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.5" />
+  <Class Name="DL.Sala">
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAAAQAAAAAAAAAAAAQACAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAIAAAADIABYAUAQAABAJUAQAgCAQACAAAYAAggAAA=</HashCode>
       <FileName>Sala.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DL.Salas">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAADACIABYCQAQAgAEAQAAAACACAAAAAAAEAgAAA=</HashCode>
+      <FileName>Salas.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

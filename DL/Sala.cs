@@ -25,7 +25,7 @@ namespace DL
         #region ESTADO
 
         EnumSalas idSala = EnumSalas.Desconhecida;
-        int maxCamas = 100;
+        public int maxCamas = 100;
         readonly Ano marcacaoReservas = new Ano();
 
         // Lista de Pessoas para cada cama
@@ -187,13 +187,13 @@ namespace DL
             Reserva dadosReserva;
             var associarPessoa = new Cama(pessoa);
 
-            if (Associar(pessoa))
+            if (PessoaJaColocada(pessoa))
             {
                 //verificação se a pessoa já está associada a uma cama
                 throw new ExceptionPessoaColocada();
             }
 
-            if (NasReservas(pessoa.NumeroCC, out dadosReserva))
+           else if (NasReservas(pessoa.NumeroCC, out dadosReserva))
             {
 
                 if (camas.Count <= MaxSala)

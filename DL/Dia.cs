@@ -16,7 +16,7 @@ namespace DL
     {
         #region ESTADO
 
-        const int maxCamas = 200;
+        const int maxCamas = 100;
         readonly List<Reserva> reservas;
         const int MAXRESERVAS = maxCamas;
 
