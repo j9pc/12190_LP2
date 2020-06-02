@@ -65,7 +65,7 @@ namespace BO
             get { return dataEntrada; }
             set
             {
-                if (PessoaReserva.NumeroCC != -1 && value < DateTime.Now)
+                if (value < DateTime.Now)
                 {
                     throw new Exception();
                 }

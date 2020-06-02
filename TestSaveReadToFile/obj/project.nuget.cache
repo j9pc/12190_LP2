@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aibY+8QLGa47YTBXokdAGRSqD7llkBJ8jLJ4z++q42gVOxiGpA1JYQnrozpcIlr9L268+x2lenHXFLCtsbxmUQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\julio\\Downloads\\12190_LP2\\TestSaveReadToFile\\TestSaveReadToFile.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\julio\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

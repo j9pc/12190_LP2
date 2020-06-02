@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\julio\\Downloads\\12190_LP2\\DL\\DL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\julio\\Downloads\\12190_LP2\\BO\\BO.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\julio\\Downloads\\12190_LP2\\BO\\BO.csproj",
+        "projectName": "BO",
+        "projectPath": "C:\\Users\\julio\\Downloads\\12190_LP2\\BO\\BO.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\julio\\Downloads\\12190_LP2\\Excepcoes\\Excepcoes.csproj": {
+                "projectPath": "C:\\Users\\julio\\Downloads\\12190_LP2\\Excepcoes\\Excepcoes.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\julio\\Downloads\\12190_LP2\\DL\\DL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\julio\\Downloads\\12190_LP2\\DL\\DL.csproj",
+        "projectName": "DL",
+        "projectPath": "C:\\Users\\julio\\Downloads\\12190_LP2\\DL\\DL.csproj",
+        "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\julio\\Downloads\\12190_LP2\\DL\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.prd.backend.kenbi.systems:5555/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\julio\\Downloads\\12190_LP2\\BO\\BO.csproj": {
+                "projectPath": "C:\\Users\\julio\\Downloads\\12190_LP2\\BO\\BO.csproj"
+              },
+              "C:\\Users\\julio\\Downloads\\12190_LP2\\Excepcoes\\Excepcoes.csproj": {
+                "projectPath": "C:\\Users\\julio\\Downloads\\12190_LP2\\Excepcoes\\Excepcoes.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\julio\\Downloads\\12190_LP2\\Excepcoes\\Excepcoes.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\julio\\Downloads\\12190_LP2\\Excepcoes\\Excepcoes.csproj",
+        "projectName": "Excepcoes",
+        "projectPath": "C:\\Users\\julio\\Downloads\\12190_LP2\\Excepcoes\\Excepcoes.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    }
+  }
+}

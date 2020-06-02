@@ -15,7 +15,7 @@ namespace BO
     /// <summary>
     /// Classe para definir o objeto Pessoa.
     /// </summary>
-    public class Pessoa
+    public class Pessoa : IPessoa
     {
 
         #region ESTADO
@@ -123,6 +123,17 @@ namespace BO
         public override int GetHashCode()
         {
             return base.GetHashCode();
+        }
+
+        /// <summary>
+        /// Verifica se os números de CC são iguais
+        /// </summary>
+        /// <param name="numero"> numero 1</param>
+        /// <param name="numeroI"> numero 2</param>
+        /// <returns></returns>
+        public bool NumerosCCIguais(int numero, int numeroI)
+        {
+            return (numero == numeroI) ? true : false;
         }
         #endregion
 

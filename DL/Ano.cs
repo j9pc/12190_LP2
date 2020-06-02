@@ -17,6 +17,7 @@ namespace DL
 {
     public class Ano
     {
+
         #region ESTADO
 
         readonly Dia[] registosReservas;
@@ -193,5 +194,6 @@ namespace DL
             }
         }
         #endregion
+
     }
 }

@@ -18,20 +18,12 @@ namespace BO
     public interface IPessoa
     {
         /// <summary>
-        /// Método para verificar se as Pessoas são iguais.
+        /// 
         /// </summary>
-        /// <returns><c>true</c>, se iguais, <c>false</c> caso contrário.</returns>
-        /// <param name="obj">Obj.</param>
-        /// <param name="obj1">Obj1.</param>
-        bool PessoasIguais(Pessoa obj, object obj1);
-
-        /// <summary>
-        /// Método para verificar se os numeros do CC são iguais.
-        /// </summary>
-        /// <returns><c>true</c>, se iguais, <c>false</c> caso contrário.</returns>
-        /// <param name="obj">Obj.</param>
-        /// <param name="numero">Registo.</param>
-        bool NumerosCCIguais(Pessoa obj, int numero);
+        /// <param name="numero"></param>
+        /// <param name="numeroI"></param>
+        /// <returns></returns>
+        bool NumerosCCIguais(int numero, int numeroI);
 
     }
 }

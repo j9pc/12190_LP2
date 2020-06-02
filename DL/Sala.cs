@@ -2,7 +2,7 @@
 // Assembly         : DL
 // Author           : João Gomes - 12190@alunos.ipca.pt
 // Created          : 01-04-2020
-// Description      : "Classe que cria uma Sala contendo 200 camas, 
+// Description      : "Classe que cria uma Sala contendo 100 camas, 
 //		contém todos os metodos associados ao reservar camas para as Pessoas."
 // ***********************************************************************
 using System;
@@ -162,17 +162,6 @@ namespace DL
             return pessoa.Equals(obj1);
         }
 
-        /// <summary>
-        /// Método para verificar a validação da idade da Pessoa.
-        /// </summary>
-        /// <returns>true</returns>
-        /// <c>false</c>
-        /// <param name="idade">Idade.</param>
-        public bool ValidaIdade(int idade)
-        {
-            throw new ApplicationException();
-        }
-
         #endregion
 
         #region METODOS DE INSERÇÃO
@@ -193,7 +182,7 @@ namespace DL
                 throw new ExceptionPessoaColocada();
             }
 
-           else if (NasReservas(pessoa.NumeroCC, out dadosReserva))
+            else if (NasReservas(pessoa.NumeroCC, out dadosReserva))
             {
 
                 if (camas.Count <= MaxSala)

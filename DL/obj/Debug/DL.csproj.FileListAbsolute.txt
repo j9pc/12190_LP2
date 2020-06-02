@@ -12,3 +12,37 @@ C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\obj\Debug\DL.cspro
 C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\obj\Debug\DL.csproj.CopyComplete
 C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\obj\Debug\DL.dll
 C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\obj\Debug\DL.pdb
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\DL.dll.config
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\DL.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\DL.pdb
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\System.Buffers.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\System.Memory.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\System.Text.Json.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\System.ValueTuple.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\BO.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\Excepcoes.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\BO.pdb
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\BO.dll.config
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\Excepcoes.pdb
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\Excepcoes.dll.config
+C:\Users\julio\Downloads\12190_LP2\DL\obj\Debug\DL.csprojAssemblyReference.cache
+C:\Users\julio\Downloads\12190_LP2\DL\obj\Debug\DL.csproj.CoreCompileInputs.cache
+C:\Users\julio\Downloads\12190_LP2\DL\obj\Debug\DL.csproj.CopyComplete
+C:\Users\julio\Downloads\12190_LP2\DL\obj\Debug\DL.dll
+C:\Users\julio\Downloads\12190_LP2\DL\obj\Debug\DL.pdb
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\bin\Debug\System.Buffers.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\bin\Debug\System.Memory.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\bin\Debug\System.Text.Json.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\bin\Debug\System.ValueTuple.dll
+C:\Users\julio\Downloads\12190_LP2\DL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\DL\bin\Debug\Newtonsoft.Json.dll

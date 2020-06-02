@@ -1,0 +1,139 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "BO": "1.0.0",
+          "DL": "1.0.0",
+          "Excepcoes": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
+        }
+      },
+      "BO/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Excepcoes": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BO.dll": {}
+        }
+      },
+      "DL/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "compile": {
+          "bin/placeholder/DL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DL.dll": {}
+        }
+      },
+      "Excepcoes/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Excepcoes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Excepcoes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BL/1.0.0": {
+      "type": "project",
+      "path": "../BL/BL.csproj",
+      "msbuildProject": "../BL/BL.csproj"
+    },
+    "BO/1.0.0": {
+      "type": "project",
+      "path": "../BO/BO.csproj",
+      "msbuildProject": "../BO/BO.csproj"
+    },
+    "DL/1.0.0": {
+      "type": "project",
+      "path": "../DL/DL.csproj",
+      "msbuildProject": "../DL/DL.csproj"
+    },
+    "Excepcoes/1.0.0": {
+      "type": "project",
+      "path": "../Excepcoes/Excepcoes.csproj",
+      "msbuildProject": "../Excepcoes/Excepcoes.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "BL >= 1.0.0",
+      "BO >= 1.0.0",
+      "Excepcoes >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\JPC\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\JPC\\Google Drive\\Licenciatura\\LP2\\Ano 2\\12190_LP2\\TestSaveReadToFile\\TestSaveReadToFile.csproj",
+      "projectName": "TestSaveReadToFile",
+      "projectPath": "C:\\Users\\JPC\\Google Drive\\Licenciatura\\LP2\\Ano 2\\12190_LP2\\TestSaveReadToFile\\TestSaveReadToFile.csproj",
+      "packagesPath": "C:\\Users\\JPC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JPC\\Google Drive\\Licenciatura\\LP2\\Ano 2\\12190_LP2\\TestSaveReadToFile\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\JPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\JPC\\Google Drive\\Licenciatura\\LP2\\Ano 2\\12190_LP2\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\JPC\\Google Drive\\Licenciatura\\LP2\\Ano 2\\12190_LP2\\BL\\BL.csproj"
+            },
+            "C:\\Users\\JPC\\Google Drive\\Licenciatura\\LP2\\Ano 2\\12190_LP2\\BO\\BO.csproj": {
+              "projectPath": "C:\\Users\\JPC\\Google Drive\\Licenciatura\\LP2\\Ano 2\\12190_LP2\\BO\\BO.csproj"
+            },
+            "C:\\Users\\JPC\\Google Drive\\Licenciatura\\LP2\\Ano 2\\12190_LP2\\Excepcoes\\Excepcoes.csproj": {
+              "projectPath": "C:\\Users\\JPC\\Google Drive\\Licenciatura\\LP2\\Ano 2\\12190_LP2\\Excepcoes\\Excepcoes.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}

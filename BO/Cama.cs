@@ -21,7 +21,7 @@ namespace BO
         #region ESTADO
 
         bool jaColocada;
-        DateTime dataEntrada, dataSaida;
+        DateTime dataEntrada;
         Pessoa pessoaColocada = new Pessoa();
 
         #endregion
@@ -34,7 +34,6 @@ namespace BO
         public Cama()
         {
             this.dataEntrada = DateTime.Now;
-            this.dataSaida = DateTime.Now;
             this.pessoaColocada = new Pessoa();
         }
 
@@ -60,16 +59,6 @@ namespace BO
         {
             get { return dataEntrada; }
             set { dataEntrada = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the data saida.
-        /// </summary>
-        /// <value>The data saida.</value>
-        public DateTime DataSaida
-        {
-            get { return dataSaida; }
-            set { dataSaida = value; }
         }
 
         /// <summary>

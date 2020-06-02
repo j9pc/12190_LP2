@@ -14,9 +14,10 @@ namespace DL
 {
     public class Dia
     {
+
         #region ESTADO
 
-        const int maxCamas = 100;
+        const int maxCamas = 25;
         readonly List<Reserva> reservas;
         const int MAXRESERVAS = maxCamas;
 

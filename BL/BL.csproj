@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GestorSalas.cs" />
+    <Compile Include="PessoasBL.cs" />
+    <Compile Include="ReservasBL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BO\BO.csproj">

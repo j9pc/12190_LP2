@@ -4,6 +4,7 @@
 // Created          : 01-04-2020
 // Description      : "Classe Valida, tem o objetivo de validar se os números do CC são colocados corretamente"
 // ***********************************************************************
+using Excepcoes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +34,7 @@ namespace BO
                 else
                 {
                     // caso contrário a excepção é lançada
-                    throw new Exception();
+                    throw new ExceptionNumeroCCInvalido();
                 }
             }
             return false;

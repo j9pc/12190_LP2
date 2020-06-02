@@ -11,14 +11,14 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
+using Excepcoes;
+
 namespace Main_TP_12190
 {
     class Program
     {
         static void Main(string[] args)
         {
-
-
             #region MENU
 
             if (!CriarSalas() && GestorSalas.NumeroDeSalas() != 2)
@@ -33,46 +33,41 @@ namespace Main_TP_12190
             Pessoa pessoa;
             Reserva reserva;
 
-            string filePath = @"C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\dados.txt";
-            List<string> linhas = File.ReadAllLines(filePath).ToList();
-
-            foreach (var linha in linhas)
-            {
-                string[] info = linha.Split(',');
-                Pessoa novaPessoa = new Pessoa();
-                novaPessoa.Nome = info[0];
-                novaPessoa.Idade = Int32.Parse(info[1]);
-                novaPessoa.NumeroCC = Int32.Parse(info[2]);
-                if (info[3] == "Sala1")
-                {
-                    EnumSalas.Sala1.ToString();
-                }
-                else
-                {
-                    EnumSalas.Sala2.ToString();
-                }
-            }
 
             do
             {
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("------------------------------------------------------------------------------------------------------------------\n\n");
                 Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("[+] ");
                 Console.ResetColor();
-                Console.Write("Camas Disponiveis\\Total");
+                Console.Write("Camas Disponiveis \\ Total de Camas");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\t\t[+] ");
                 Console.ResetColor();
+                Console.WriteLine("Numero de Reservas \\ Total de Camas Prioritarias");
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("\n\n[1] ");
+                Console.Write("[1] ");
                 Console.ResetColor();
-                Console.Write("{0} - {1}\\{2}\n", EnumSalas.Sala1.ToString(), GestorSalas.CamasDisponiveis(EnumSalas.Sala1), GestorSalas.TotalCamas(EnumSalas.Sala1));
+                Console.Write("{0} - {1}\\{2}", EnumSalas.Sala1.ToString(), GestorSalas.CamasDisponiveis(EnumSalas.Sala1), GestorSalas.TotalCamas(EnumSalas.Sala1));
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\t\t\t\t[1] ");
+                Console.ResetColor();
+                Console.Write("{0} - {1}\\{2}\n", EnumSalas.Sala1.ToString(), GestorSalas.NumeroReservas(EnumSalas.Sala1), GestorSalas.MaxReservas(EnumSalas.Sala1));
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("[2] ");
                 Console.ResetColor();
-                Console.Write("{0} - {1}\\{2}\n", EnumSalas.Sala2.ToString(), GestorSalas.CamasDisponiveis(EnumSalas.Sala2), GestorSalas.TotalCamas(EnumSalas.Sala2));
+                Console.Write("{0} - {1}\\{2}", EnumSalas.Sala2.ToString(), GestorSalas.CamasDisponiveis(EnumSalas.Sala2), GestorSalas.TotalCamas(EnumSalas.Sala2));
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("\t\t\t\t[2] ");
+                Console.ResetColor();
+                Console.Write("{0} - {1}\\{2}\n", EnumSalas.Sala2.ToString(), GestorSalas.NumeroReservas(EnumSalas.Sala2), GestorSalas.MaxReservas(EnumSalas.Sala2));
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.ResetColor();
                 Console.Write("\n[0]  Sair da Aplicação\n");
                 Console.Write("[1]  Nova pessoa\n");
-                Console.Write("[2]  Reservar Cama\n");
-                Console.Write("[3]  Cancelar Reserva\n");
+                Console.Write("[2]  Reservar Cama Prioritaria\n");
+                Console.Write("[3]  Cancelar Reserva Prioritaria\n");
                 Console.Write("[4]  Retirar pessoa\n");
                 Console.Write("[5]  Consultar Reservas para Determinada Data\n");
                 Console.Write("[6]  Consultar Reservas para Determinada NumeroCC\n");
@@ -100,6 +95,7 @@ namespace Main_TP_12190
                             Console.WriteLine("\nA pessoa foi colocada com sucesso");
 
                         }
+                        BL.PessoasBL.SavePessoa(pessoa);
                         Console.WriteLine("Prima qualquer tecla para voltar ao menu.");
                         Console.ReadKey();
                         Console.Clear();
@@ -126,6 +122,7 @@ namespace Main_TP_12190
                             {
                                 Console.WriteLine("Cama reservada com sucesso\nPrima Qualquer Tecla para Voltar ao Menu >>> ");
                                 Console.ReadKey();
+                                Console.Clear();
                             }
 
                             if (!aux)
@@ -136,6 +133,7 @@ namespace Main_TP_12190
                                 aux = true;
                             }
                         } while (!aux);
+                        BL.ReservasBL.SaveReserva(reserva);
                         break;
 
                     case 3:
@@ -222,7 +220,9 @@ namespace Main_TP_12190
                         break;
 
                     case 5:
+
                         MostrarReservas(GestorSalas.CamasOcupadasNaData(DatasReserva(false), GetSala()));
+                        MostrarReservas(BL.ReservasBL.GetReservas());
                         break;
 
                     case 6:
@@ -242,13 +242,14 @@ namespace Main_TP_12190
 
                         } while (!valida);
                         MostrarReservas(GestorSalas.NumerosDeCCReservas(numeroCC, GetSala()));
+                        MostrarReservas(BL.ReservasBL.GetReservas());
                         break;
 
                     case 7:
 
-
                         Console.Write("\n");
                         MostrarColocadas(GestorSalas.PessoasColocadas(GetSala()));
+                        MostrarColocadas(BL.PessoasBL.GetPessoas());
                         Console.Write("\nPrima Qualquer Tecla para Voltar ao Menu >>> ");
                         Console.ReadKey();
                         Console.Clear();
@@ -303,7 +304,6 @@ namespace Main_TP_12190
                 Console.Write("Insira o nome da pessoa\n\t>>> ");
                 pessoa.Nome = Console.ReadLine().ToUpper();
 
-
                 do
                 {
                     Console.Write("Insira a idade da Pessoa\n(Ex: 57)\t>>> ");
@@ -331,9 +331,9 @@ namespace Main_TP_12190
                     {
                         Console.WriteLine(ex.Message, "Número de CC colocado incorretamente, insira novamente");
                         evalNumeroCC = false;
+
                     }
                 } while (!evalNumeroCC);
-
                 return true;
 
             }
@@ -377,16 +377,6 @@ namespace Main_TP_12190
             {
                 aux = false;
                 Console.WriteLine(ex.Message);
-            }
-
-            string filePath = @"C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\dados.txt";
-            string texto = String.Concat(pessoa.Nome, ",", pessoa.Idade.ToString(), ",", pessoa.NumeroCC.ToString(), ",", nSalas.ToString());
-
-
-            using (StreamWriter sw = File.AppendText(filePath))
-            {
-                sw.WriteLine(texto);
-
             }
 
             return aux;
@@ -496,7 +486,6 @@ namespace Main_TP_12190
                 Console.WriteLine("Reserva [{0}] Ocupada", i + 1);
                 Console.WriteLine("Reserva [{0}] Número de CC da pessoa -> {1}", i + 1, ocupadas[i].PessoaReserva.NumeroCC);
                 Console.WriteLine("Reserva [{0}] Hora de Entrada -> {1}", i + 1, ocupadas[i].DataEntrada);
-                Console.WriteLine("Reserva [{0}] Hora de Saida -> {1}", i + 1, ocupadas[i].DataSaida);
                 Console.WriteLine("____________________");
             }
             return;
@@ -535,7 +524,7 @@ namespace Main_TP_12190
         {
             bool aux;
             DateTime data;
-            string message = "Insira a data pretendida\nEx:\"2021-01-10 10:30\"\t>>> ";
+            string message = "Insira a data pretendida\nEx:\"2021-01-10\"\t>>> ";
 
             if (cancela)
             {

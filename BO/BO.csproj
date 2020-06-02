@@ -80,5 +80,11 @@
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Excepcoes\Excepcoes.csproj">
+      <Project>{C22F933C-CD4C-4565-B834-F54FB7F7FC38}</Project>
+      <Name>Excepcoes</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

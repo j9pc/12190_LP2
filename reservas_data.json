@@ -1,0 +1,22 @@
+[
+  {
+    "DataEntrada": "2020-09-12T00:00:00",
+    "DataSaida": "0001-01-01T00:00:00",
+    "PessoaReserva": {
+      "Nome": "PEDRO",
+      "Idade": 12,
+      "NumeroCC": 98989898
+    },
+    "Colocada": false
+  },
+  {
+    "DataEntrada": "2020-06-20T00:00:00",
+    "DataSaida": "0001-01-01T00:00:00",
+    "PessoaReserva": {
+      "Nome": "KIKO",
+      "Idade": 80,
+      "NumeroCC": 80009000
+    },
+    "Colocada": false
+  }
+]

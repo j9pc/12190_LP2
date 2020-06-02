@@ -42,8 +42,10 @@
   <ItemGroup>
     <Compile Include="Ano.cs" />
     <Compile Include="Dia.cs" />
+    <Compile Include="PessoasDataReadWritter.cs" />
     <Compile Include="Sala.cs" />
     <Compile Include="Salas.cs" />
+    <Compile Include="ReservasDataReadWritter.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BO\BO.csproj">
@@ -54,6 +56,14 @@
       <Project>{c22f933c-cd4c-4565-b834-f54fb7f7fc38}</Project>
       <Name>Excepcoes</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Json">
+      <Version>4.7.2</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

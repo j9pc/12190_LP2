@@ -9,9 +9,9 @@ using System;
 namespace Excepcoes
 {
     /// <summary>
-	/// A pessoa já colocada.
-	/// </summary>
-	public class ExceptionPessoaColocada : ApplicationException
+    /// A pessoa já colocada.
+    /// </summary>
+    public class ExceptionPessoaColocada : ApplicationException
     {
         /// <summary>
         /// Define/Devolve <see cref="Excepcoes.PessoaColocada"/> class.

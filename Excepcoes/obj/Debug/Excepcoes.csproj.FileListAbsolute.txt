@@ -5,3 +5,9 @@ C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Excepcoes\bin\Debug\E
 C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Excepcoes\bin\Debug\Excepcoes.pdb
 C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Excepcoes\obj\Debug\Excepcoes.dll
 C:\Users\JPC\Google Drive\Licenciatura\LP2\Ano 2\12190_LP2\Excepcoes\obj\Debug\Excepcoes.pdb
+C:\Users\julio\Downloads\12190_LP2\Excepcoes\bin\Debug\Excepcoes.dll.config
+C:\Users\julio\Downloads\12190_LP2\Excepcoes\bin\Debug\Excepcoes.dll
+C:\Users\julio\Downloads\12190_LP2\Excepcoes\bin\Debug\Excepcoes.pdb
+C:\Users\julio\Downloads\12190_LP2\Excepcoes\obj\Debug\Excepcoes.csproj.CoreCompileInputs.cache
+C:\Users\julio\Downloads\12190_LP2\Excepcoes\obj\Debug\Excepcoes.dll
+C:\Users\julio\Downloads\12190_LP2\Excepcoes\obj\Debug\Excepcoes.pdb

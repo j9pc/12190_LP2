@@ -3,7 +3,7 @@
 // Author           : João Gomes - 12190@alunos.ipca.pt
 // Created          : 01-04-2020
 // Description      : " Classe Salas que comunica com o BL, esta classe consiste em criar duas salas distintas
-//	cada uma delas com 200 camas, métodos estáticos "
+//	cada uma delas com 125 camas, métodos estáticos "
 // ***********************************************************************
 using System;
 using System.Collections.Generic;
